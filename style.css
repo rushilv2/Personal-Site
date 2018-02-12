@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanv:100');
+@import url('https://fonts.googleapis.com/css?family=Yantramanv:100');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 17px;
+	height: 100%;
+	max-width: 100%;
+	line-height: 1.6;
+	overflow-x: hidden;
+}
+
+/* ---------------------------------------------- /*
+ * Home
+/* ---------------------------------------------- */
+
+.intro{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	background: url(../css/background.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.content h1{
+	font-family: 'Yantramanav', sans-serif;
+	line-height: 0.7;
+	font-size: 70px;
+	color: #ffffff;
+
+}
+
+.content h2{
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 40px;
+	color: #ffffff;
+	line-height: 0;
+}
+
+
+/* ---------------------------------------------- /*
+ * Home Icons
+/* ---------------------------------------------- */
+
+.icons li{
+	float: center;
+	color: #ffffff;
+	list-style: none;
+	font-size: 65px;
+}
+
+/* ---------------------------------------------- /*
+ * Navigation Bar
+/* ---------------------------------------------- */
+
+.navigation ul{
+	list-style: none;
+	background-color: #fff;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.navigation li{
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 1.2em;
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 1px solid #888;
+}
+
+.navigation a{
+  	text-decoration: none;
+  	color: #000;
+  	display: block;
+  	transition: .3s background-color;
+}
+
+.navigation a:hover{
+	background-color: #005f5f;
+}
+
+.navigation a.active{
+  	background-color: #fff;
+  	color: #444;
+  	cursor: default;
+}
+
+
+@media screen and (min-width: 600px) {
+.navigation li {
+ 	width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+ }
+
+ .navigation li {
+    display: inline-block;
+    margin-right: -4px;
+ }
+
+
+/* ---------------------------------------------- /*
+ * The Information
+/* ---------------------------------------------- */
+
+.section1{
+	font-family: 'Yantramanav', sans-serif;
+	padding: 20px;
+	background: #262626;
+	text-align: center;
+	color: #fff;
+}
+
+.section2{
+	font-family: 'Yantramanav', sans-serif;
+	padding: 20px;
+	background: #fff;
+	text-align: center;
+	color: #262626;
+}
+
+.section3{
+	font-family: 'Yantramanav', sans-serif;
+	padding: 20px;
+	background: #262626;
+	text-align: center;
+	color: #fff;
+}
+
+
+/* ---------------------------------------------- /*
+ * Exerience
+
+$(document).ready(function() {
+  //change the integers below to match the height of your upper dive, which I called
+  //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
+  //to figure out what the scroll position is when exactly you want to fix the nav
+  //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
+  //you know the position.
+  $(window).scroll(function () { 
+
+    console.log($(window).scrollTop());
+
+    if ($(window).scrollTop() > 550) {
+      $('#nav_bar').addClass('navbar-fixed-top');
+    }
+
+    if ($(window).scrollTop() < 551) {
+      $('#nav_bar').removeClass('navbar-fixed-top');
+    }
+  });
+});
+
+$(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 280) {
+      $('#nav_bar').addClass('navbar-fixed');
+    }
+    if ($(window).scrollTop() < 281) {
+      $('#nav_bar').removeClass('navbar-fixed');
+    }
+  });
+});
+
+
+
+/* ---------------------------------------------- */
+
+
+
+
+
+
+
+
+
